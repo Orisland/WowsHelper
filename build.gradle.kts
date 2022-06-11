@@ -11,8 +11,8 @@ version = "0.20"
 repositories {
 //    removeIf { it is MavenArtifactRepository && it.url.host == "dl.bintray.com" }
     mavenLocal()
-//    maven(url = "https://maven.aliyun.com/repository/public")
-//    maven(url = "https://maven.aliyun.com/repository/gradle-plugin")
+    maven(url = "https://maven.aliyun.com/repository/public")
+    maven(url = "https://maven.aliyun.com/repository/gradle-plugin")
 //    maven(url = "https://repository.apache.org/content/groups/snapshots/")
     mavenCentral()
     gradlePluginPortal()

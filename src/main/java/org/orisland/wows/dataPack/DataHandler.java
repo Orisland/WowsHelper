@@ -176,9 +176,16 @@ public class DataHandler {
         shipDataObjOld.setKill(shipDataObjOld.getKill() + shipDataObjNew.getKill());
         shipDataObjOld.setWins(shipDataObjOld.getWins() + shipDataObjNew.getWins());
         shipDataObjOld.setDmg(shipDataObjOld.getDmg() + shipDataObjNew.getDmg());
-        shipPr.setExpectedDmg(shipPr.getExpectedDmg() + shipDataObjNew.getPR().getExpectedDmg());
-        shipPr.setExpectedWins(shipPr.getExpectedWins() + shipDataObjNew.getPR().getExpectedWins());
-        shipPr.setExpectedFrags(shipPr.getExpectedFrags() + shipDataObjNew.getPR().getExpectedFrags());
+
+        if (shipPr.getExpectedDmg() == 0){
+            shipPr.setExpectedDmg(shipPr.getExpectedDmg() + shipDataObjNew.getPR().getActualDmg());
+            shipPr.setExpectedWins(shipPr.getExpectedWins() + shipDataObjNew.getPR().getActualWins());
+            shipPr.setExpectedFrags(shipPr.getExpectedFrags() + shipDataObjNew.getPR().getActualFrags());
+        }else {
+            shipPr.setExpectedDmg(shipPr.getExpectedDmg() + shipDataObjNew.getPR().getExpectedDmg());
+            shipPr.setExpectedWins(shipPr.getExpectedWins() + shipDataObjNew.getPR().getExpectedWins());
+            shipPr.setExpectedFrags(shipPr.getExpectedFrags() + shipDataObjNew.getPR().getExpectedFrags());
+        }
         shipPr.setActualDmg(shipPr.getActualDmg() + shipDataObjNew.getPR().getActualDmg());
         shipPr.setActualWins(shipPr.getActualWins() + shipDataObjNew.getPR().getActualWins());
         shipPr.setActualFrags(shipPr.getActualFrags() + shipDataObjNew.getPR().getActualFrags());

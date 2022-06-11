@@ -32,7 +32,7 @@ public class PlayerData {
      * @param server 服务器
      * @return 单个玩家数据
      */
-    public static SinglePlayer NickNameToAccountInfo(String username, ApiConfig.Server server) {
+    public static SinglePlayer NickNameToAccountInfo(String username, Server server) {
         SinglePlayer singlePlayer = null;
         String accountId;
         try {
@@ -81,7 +81,7 @@ public class PlayerData {
      * @param server 服务器
      * @return 返回uid
      */
-    public static String searchNickNameToAccountId(String username, ApiConfig.Server server){
+    public static String searchNickNameToAccountId(String username, Server server){
         String format = String.format(ApiConfig.NICKNAME_ACCOUNTID, server, ApiConfig.APPID, username);
         JsonNode urlByJson = HttpClient.getUrlByJson(format);
         if (!urlByJson.get("status").asText().equals("ok")){
@@ -105,7 +105,7 @@ public class PlayerData {
      * @param server 区服
      * @return 详细用户数据
      */
-    public static JsonNode searchAccountIdToAccountInfo(String uid, ApiConfig.Server server){
+    public static JsonNode searchAccountIdToAccountInfo(String uid, Server server){
         String format = String.format(ApiConfig.ACCOUNTID_ACCOUNTINFO, server, ApiConfig.APPID, uid);
         JsonNode jsonNode = accountDataStandard(HttpClient.getUrlByJson(format));
         if (jsonNode != null && jsonNode.get("statistics") != null){
@@ -124,7 +124,7 @@ public class PlayerData {
      * @param date  时间
      * @return  包括数据的list
      */
-    public static List<SingleShipDataSimple> SearchAccountIdToAccountInfoByDate(String accountId, ApiConfig.Server server, String date)  {
+    public static List<SingleShipDataSimple> SearchAccountIdToAccountInfoByDate(String accountId, Server server, String date)  {
         String[] dates = date.split(",");
         JsonNode urlByJson = HttpClient.getUrlByJson(String.format(DATE_PLAYERINFO, server, APPID, accountId, date, API_LANGUAGE));
         List<SingleShipDataSimple> res = new ArrayList<>();

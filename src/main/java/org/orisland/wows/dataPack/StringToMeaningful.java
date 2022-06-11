@@ -151,7 +151,7 @@ public class StringToMeaningful {
      * @param server    区服
      * @return          保存地址
      */
-    public static String ServerToDir(ApiConfig.Server server){
+    public static String ServerToDir(Server server){
         switch (server){
             case EU:
                 return dataDirEu;

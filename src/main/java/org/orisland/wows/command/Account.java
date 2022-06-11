@@ -74,8 +74,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         build.getPreview(),
-                        String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                || bind.getServer() == ApiConfig.Server.com
+                        String.format("[%s]%s", bind.getServer() == Server.NA
+                                || bind.getServer() == Server.com
                                 ? "NA"
                                 : bind.getServer(), bind.getAccountName()),
                         "今日战绩",
@@ -139,8 +139,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         build.getPreview(),
-                        String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                || bind.getServer() == ApiConfig.Server.com
+                        String.format("[%s]%s", bind.getServer() == Server.NA
+                                || bind.getServer() == Server.com
                                 ? "NA"
                                 : bind.getServer(), bind.getAccountName()),
                         "今日战绩",
@@ -204,8 +204,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         build.getPreview(),
-                        String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                || bind.getServer() == ApiConfig.Server.com
+                        String.format("[%s]%s", bind.getServer() == Server.NA
+                                || bind.getServer() == Server.com
                                 ? "NA"
                                 : bind.getServer(), bind.getAccountName()),
                         "今日战绩",
@@ -266,8 +266,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         build.getPreview(),
-                        String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                || bind.getServer() == ApiConfig.Server.com
+                        String.format("[%s]%s", bind.getServer() == Server.NA
+                                || bind.getServer() == Server.com
                                 ? "NA"
                                 : bind.getServer(), bind.getAccountName()),
                         "今日战绩",
@@ -330,8 +330,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         build.getPreview(),
-                        String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                || bind.getServer() == ApiConfig.Server.com
+                        String.format("[%s]%s", bind.getServer() == Server.NA
+                                || bind.getServer() == Server.com
                                 ? "NA"
                                 : bind.getServer(), bind.getAccountName()),
                         "今日rank战绩",
@@ -397,8 +397,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         build.getPreview(),
-                        String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                || bind.getServer() == ApiConfig.Server.com
+                        String.format("[%s]%s", bind.getServer() == Server.NA
+                                || bind.getServer() == Server.com
                                 ? "NA"
                                 : bind.getServer(), bind.getAccountName()),
                         "今日rank战绩",
@@ -468,8 +468,8 @@ public class Account extends JCompositeCommand {
 
                     ForwardMessage record = new ForwardMessage(
                             build.getPreview(),
-                            String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                    || bind.getServer() == ApiConfig.Server.com
+                            String.format("[%s]%s", bind.getServer() == Server.NA
+                                    || bind.getServer() == Server.com
                                     ? "NA"
                                     : bind.getServer(), bind.getAccountName()),
                             "今日战绩",
@@ -501,7 +501,7 @@ public class Account extends JCompositeCommand {
         QuoteReply quoteReply = new QuoteReply(sender.getFromEvent().getSource());
         String qq = String.valueOf(sender.getFromEvent().getSender().getId());
         MessageChain chain = null;
-        ApiConfig.Server server = StringToServer(StringServer);
+        Server server = StringToServer(StringServer);
         SinglePlayer singlePlayer = AccountIdToAccountInfo(searchNickNameToAccountId(accountName, server), server);
         ForwardMessageBuilder messList = null;
 
@@ -521,7 +521,7 @@ public class Account extends JCompositeCommand {
                 } else {
                     if (singlePlayer == null) {
                         chain = new MessageChainBuilder()
-                                .append(String.format("[%s]%s玩家不存在或账户异常!", server == ApiConfig.Server.com ? "NA" : server, accountName))
+                                .append(String.format("[%s]%s玩家不存在或账户异常!", server == Server.com ? "NA" : server, accountName))
                                 .append(quoteReply)
                                 .build();
                         sender.sendMessage(chain);
@@ -555,8 +555,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         preInfo.build().getPreview(),
-                        String.format("[%s]%s", server == ApiConfig.Server.NA
-                                || server == ApiConfig.Server.com
+                        String.format("[%s]%s", server == Server.NA
+                                || server == Server.com
                                 ? "NA"
                                 : server, accountName),
                         "个人pr",
@@ -631,8 +631,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         build.getPreview(),
-                        String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                || bind.getServer() == ApiConfig.Server.com
+                        String.format("[%s]%s", bind.getServer() == Server.NA
+                                || bind.getServer() == Server.com
                                 ? "NA"
                                 : bind.getServer(), bind.getAccountName()),
                         "PR:",
@@ -707,8 +707,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         preInfo.build().getPreview(),
-                        String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                || bind.getServer() == ApiConfig.Server.com
+                        String.format("[%s]%s", bind.getServer() == Server.NA
+                                || bind.getServer() == Server.com
                                 ? "NA"
                                 : bind.getServer(), bind.getAccountName()),
                         "个人pr",
@@ -763,8 +763,8 @@ public class Account extends JCompositeCommand {
 
                 ForwardMessage record = new ForwardMessage(
                         build.getPreview(),
-                        String.format("[%s]%s", bind.getServer() == ApiConfig.Server.NA
-                                || bind.getServer() == ApiConfig.Server.com
+                        String.format("[%s]%s", bind.getServer() == Server.NA
+                                || bind.getServer() == Server.com
                                 ? "NA"
                                 : bind.getServer(), bind.getAccountName()),
                         "昨日战绩",

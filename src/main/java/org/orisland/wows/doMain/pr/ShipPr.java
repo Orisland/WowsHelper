@@ -5,6 +5,9 @@ import lombok.Data;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.File;
+
+import static org.orisland.wows.ApiConfig.dataDir;
 import static org.orisland.wows.dataPack.PrData.PrStandard;
 import static org.orisland.wows.dataPack.ShipData.ShipToExpected;
 
@@ -69,6 +72,7 @@ public class ShipPr {
                 this.setEvaluate("空");
                 this.setDistance("-35");
                 this.setColor("未知");
+                this.setPic(dataDir + "prImg" + File.separator + 10 + File.separator + "新船无pr.png");
                 return false;
             }
         }
