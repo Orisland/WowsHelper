@@ -1,5 +1,5 @@
 # [WowsChef](https://github.com/Orisland/WowsHelper)
-> [战舰世界](https://eu.wargaming.net/en/games/wows) 国际服每日战绩查询插件
+> [战舰世界](https://eu.wargaming.net/en/games/wows) 国际服每日战绩查询插件，海军食堂插件。
 
 ![我跟你说，窝窝屎狗都不玩](/assets/uploads/files/1653490878249-0197f0e3-c2e4-416d-aab1-3143c7629604-image.png)
 
