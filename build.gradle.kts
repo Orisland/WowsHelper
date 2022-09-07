@@ -5,8 +5,8 @@ plugins {
     id("net.mamoe.mirai-console") version "2.12.0"
 }
 
-group = "org.orisland"
-version = "0.20"
+group = "top.orisland"
+version = "0.23"
 
 repositories {
 //    removeIf { it is MavenArtifactRepository && it.url.host == "dl.bintray.com" }

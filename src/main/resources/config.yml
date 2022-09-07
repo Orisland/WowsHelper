@@ -1,5 +1,5 @@
 appid: ""
-updateShipExpected: false
+updateShipExpected: true
 apiLanguage: "en"
 useLocalShipInfo: true
 saveMode: "file"
