@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "top.orisland"
-version = "0.23"
+version = "0.2.4"
 
 repositories {
 //    removeIf { it is MavenArtifactRepository && it.url.host == "dl.bintray.com" }

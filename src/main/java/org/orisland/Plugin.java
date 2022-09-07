@@ -18,7 +18,7 @@ public final class Plugin extends JavaPlugin {
     public static final Plugin INSTANCE = new Plugin();
     private Plugin() {
 //        引入日志插件前置
-        super(new JvmPluginDescriptionBuilder("top.orisland.wows", "0.23")
+        super(new JvmPluginDescriptionBuilder("top.orisland.wows", "0.2.4")
                 .name("Wows")
                 .author("Orisland")
                 .dependsOn("net.mamoe.mirai-slf4j-bridge", true)
