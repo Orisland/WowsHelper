@@ -109,10 +109,10 @@ public class ShipData {
                 Document document = Jsoup.connect("https://iwarship.net/wowsdb/index").get();
                 Elements script = document.getElementsByTag("script");
                 for (Element element : script) {
-                    for (String var : element.data().split("var")) {
+                    for (String var : element.data().split("var ")) {
                         if (var.length() < 8)
                             continue;
-                        if (var.startsWith(" shipName")){
+                        if (var.startsWith("shipName")){
                             String s = var.split("JSON.parse\\(")[1].split("\\);")[0];
                             String regex = "\\\\\"";
                             String s1 = s.replaceAll(regex, "\"");
