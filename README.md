@@ -28,8 +28,6 @@
 **本插件处于初版本A测中**，不可避免的会出现各种**神秘的bug**等问题，如果遇到了各种莫名其妙的异常，请截图聊天记录发issue(**如果您不想在issue中出示您的战绩，请通过mirai站内信私聊我**)，请在issue中附带异常文本，请勿发送只含有部分异常的截图。
 
 ### 当前部分功能截图一览
-> ^fold
->
 >![5e356bf7-5963-43bf-8afa-a8b6b8d63a58-image.png](/assets/uploads/files/1654483158678-5e356bf7-5963-43bf-8afa-a8b6b8d63a58-image.png)
 >
 >![c9a96c68-ce48-40d6-94a3-2edf665aca6f-image.png](/assets/uploads/files/1654483197662-c9a96c68-ce48-40d6-94a3-2edf665aca6f-image.png)
