@@ -4,17 +4,13 @@
 ![我跟你说，窝窝屎狗都不玩](/assets/uploads/files/1653490878249-0197f0e3-c2e4-416d-aab1-3143c7629604-image.png)
 
 [![Mirai](https://img.shields.io/badge/Mirai-bot-green)](https://github.com/mamoe/mirai)
-[![GitHub release (latest by date)](https://img.shields.io/github/downloads/Orisland/JMiraiFrame/latest/total)](https://github.com/Orisland/JMiraiFrame/releases/tag/wowsHelper-0.2.2)
+[![GitHub release (latest by date)](https://img.shields.io/github/downloads/Orisland/JMiraiFrame/latest/total)](https://github.com/Orisland/WowsHelper/releases/tag/WowsChef-0.2.4)
 
->懒得安装？
->
->[加入bot测试群](https://qm.qq.com/cgi-bin/qm/qr?k=VHilBzXGCS3hTVrL49jCMCP7DfEDP1fi&authKey=7leGjSG+WEGHrnldAfUsI3PUKYSeaSY29zwlC9Zpq0nL4kqbaSWVVOx3OB4nsgaq&noverify=0)
->
+
 >在本群出现的插件问题会被开发者最快看到，您也可以直接在该群中进行战绩查询.
 >
 >*我不能容忍这么大的论坛里没有窝窝屎的痕迹(**
 ### 本插件的开发初衷(**重要**):
-> ^fold
 >
 >客观原因：
 > 本插件存在的意义是因为yuyuko
