@@ -1,17 +1,14 @@
-# [WowsHelper](https://github.com/Orisland/JMiraiFrame/tree/wows-dev)
+# [WowsChef](https://github.com/Orisland/WowsHelper)
 > [战舰世界](https://eu.wargaming.net/en/games/wows) 国际服每日战绩查询插件
 
 ![我跟你说，窝窝屎狗都不玩](/assets/uploads/files/1653490878249-0197f0e3-c2e4-416d-aab1-3143c7629604-image.png)
 
 [![Mirai](https://img.shields.io/badge/Mirai-bot-green)](https://github.com/mamoe/mirai)
 [![GitHub release (latest by date)](https://img.shields.io/github/downloads/Orisland/JMiraiFrame/latest/total)](https://github.com/Orisland/WowsHelper/releases/tag/WowsChef-0.2.4)
-
-
->在本群出现的插件问题会被开发者最快看到，您也可以直接在该群中进行战绩查询.
 >
->*我不能容忍这么大的论坛里没有窝窝屎的痕迹(**
+>*我不能容忍这么大的论坛里没有窝窝屎的痕迹(*
 ### 本插件的开发初衷(**重要**):
->
+
 >客观原因：
 > 本插件存在的意义是因为yuyuko
 > ![image](/assets/uploads/files/1653490589998-00046bd2-6112-4327-8bfc-7ebcaf35cc94-image.png)
@@ -25,7 +22,7 @@
 
 
 ### 注意事项
-**本插件处于初版本A测中**，不可避免的会出现各种**神秘的bug**等问题，如果遇到了各种莫名其妙的异常，请截图聊天记录发issue(**如果您不想在issue中出示您的战绩，请通过mirai站内信私聊我**)，请在issue中附带异常文本，请勿发送只含有部分异常的截图。
+本插件的功能已经基本稳定，如果遇到了各种莫名其妙的异常，请截图聊天记录发`issue`(**如果您不想在`issue`中出示您的战绩，请通过mirai站内信私聊我**)，请在`issue`中附带`异常文本`以及`mirai版本`和下载的`插件名称`，`请勿`发送只含有`部分异常`的`截图`。
 
 ### 当前部分功能截图一览
 >![5e356bf7-5963-43bf-8afa-a8b6b8d63a58-image.png](/assets/uploads/files/1654483158678-5e356bf7-5963-43bf-8afa-a8b6b8d63a58-image.png)
@@ -38,16 +35,12 @@
 >
 
 ###  指令一览
-> ^fold
->
 >功能较多，安装插件后直接w help比这里说快的多。
 >![86298108-4949-4707-a006-8b7e3013100b-image.png](/assets/uploads/files/1653881689683-86298108-4949-4707-a006-8b7e3013100b-image.png)
 >
 
 
 ###  安装前的必要步骤：[developers](https://developers.wargaming.net/applications/)
-> ^fold
->
 > * 登陆[developers](https://developers.wargaming.net/applications/)，登陆您的wg账号。
 >
 > * 创建应用![0f84c16d-98f0-4cb3-9418-ea54c7890b24-image.png](/assets/uploads/files/1653498673089-0f84c16d-98f0-4cb3-9418-ea54c7890b24-image.png)
@@ -56,37 +49,33 @@
 >
 > ![ce568c6e-bb9a-47cf-98f4-bc93c2a5e07f-image.png](/assets/uploads/files/1653498728471-ce568c6e-bb9a-47cf-98f4-bc93c2a5e07f-image.png)
 >
-> * 进入新建的应用详情，记录马赛克的application id部分
+> * 进入新建的应用详情，记录马赛克的`application id`部分
 >
 > ![d856c678-8f99-4f45-9833-688057d9b04a-image.png](/assets/uploads/files/1653498842766-d856c678-8f99-4f45-9833-688057d9b04a-image.png)
 
 ###  以下为正常的插件安装步骤
-> ^fold
->
-> 前往gayhub下载zip
->  解压两个文件,拖入plugins
+> 前往`gayhub`下载`插件本体jar`与`日志jar`
+(注意，高版本mirai可能会产生日志插件失效的错误，不影响插件使用但是无法正常的看到控制台输出，插件开发时的mirai版本为2.11)
+>  拖入`plugins`，老版本可能需要解压。
 >  启动bot，关闭bot
-> 打开mirai根目录config\org.orisland.plugin
-> 编辑config.yml，将刚才的application Id填入appid: 引号可加可不加
-> 重启bot## 授予用户所需权限，授予自己全部权限.
+> 打开mirai根目录`config\top.orisland.wows`
+> 编辑`config.yml`，将刚才的`application Id`填入`appid`: `引号`可加可不加
+> 重启bot
+> 授予用户所需权限，授予自己全部权限.
 [如何授权？](https://docs.mirai.mamoe.net/console/Permissions.html#%E8%A2%AB%E8%AE%B8%E5%8F%AF%E4%BA%BA-id)
 
 ###  插件权限一览：
-> ^fold
->
 > 应该给予成员的权限
-> org.orisland.plugin:command.wws                  ->基础指令
-> org.orisland.plugin:command.wws-help       ->帮助
-> org.orisland.plugin:command.wws-bind       ->玩家绑定
+> `top.orisland.wows:command.wws`                  ->基础指令
+> `top.orisland.wows:command.wws-help`       ->帮助
+> `top.orisland.wows:command.wws-bind`      ->玩家绑定
 >
 > 不应该给予成员的权限：
-> org.orisland.plugin:command.wws-controller    ->数据操作
+> `top.orisland.wows:command.wws-controller`   ->数据操作
 
 ### 目前没有支持国服的计划，~~未来也不会有~~，未来可能有。
 
 ## 重要的FQA
-> ^fold
->
 > * 为什么不做图形化？
     > 懒。
 >
@@ -124,9 +113,19 @@
     > 适合。因为没有任何高深的处理，全部是静态方法处理数据。
 
 
->没人看的更新日志
+### 没人看的更新日志
 
-> 
+>v0.2.4
+>`非兼容更新`，需要移动`config`和`data`中的`org.orisland.plugin`数据文件到`top.orisland.wows`
+>修正了config.yml文件丢失的问题，现在可以正常的初始化了。
+修复了浩舰语言文件的解析问题，现在解析正常了。
+>2022年9月7日20:41:09
+>
+>v0.2.3
+>修复了瑟堡新船只导致的null问题。
+>如果您之前安装过插件，需要删除插件data中的prImg文件夹，或手动添加10文件夹。
+>2022年6月12日02:54:25
+>
 > v0.2.2
 > 添加了更多食材，并允许使用者自行添加食材！
 > 修复了因为玩家绑定后隐藏战绩而导致的数据更新错误问题
