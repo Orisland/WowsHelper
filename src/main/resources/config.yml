@@ -1,0 +1,16 @@
+appid: ""
+updateShipExpected: false
+apiLanguage: "en"
+useLocalShipInfo: true
+saveMode: "file"
+db:
+  url: ""
+  username: ""
+  password: ""
+refreshData: true
+refreshTime: "00:00"
+useBind: true
+maxPlayerData: 10
+retry: 10
+updateShipInfoAuto: true
+admin: ""
