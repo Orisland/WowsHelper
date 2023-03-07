@@ -92,7 +92,8 @@ public class ApiConfig {
     public static final String dataDirEu = dataDir + "playerData" + File.separator + "eu" + File.separator;
     public static final String dataDirAsia = dataDir + "playerData" + File.separator + "asia" + File.separator;
     public static final String dataDirNa = dataDir + "playerData" + File.separator + "na" + File.separator;
-    public static final String dataDirRu = dataDir + "playerData" + File.separator + "ru" + File.separator;
+//    注意俄服没了，难绷，找半天问题原来是俄服没了，直接改成eu。
+    public static final String dataDirRu = dataDir + "playerData" + File.separator + "eu" + File.separator;
 
     /**
      * 配置文件地址

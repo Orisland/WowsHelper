@@ -189,10 +189,11 @@ public class StringToMeaningful {
             case "美服":
             case "美":
                 return Server.com;
+//                将俄服暂时全部合并入欧服
             case "俄服":
             case "俄":
             case "RU":
-                return Server.RU;
+                return Server.EU;
             default:
                 log.error("出现了预料之外的问题！");
                 return null;
